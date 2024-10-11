@@ -859,13 +859,14 @@ class EnhancedGreedyGatePacking(GatePacking):
 #     print(length)
 #     print(bounding_box)
 def main():
+    #packing,ll,bb=aadi_solution()
     packing = EnhancedGreedyGatePacking()
     packing.read_input('input.txt')
      # print(packing.ports_adj_list)
     packing.greedy_multiple()
     packing.send_to_file('output.txt')
     print(packing.wire_length)
-    packing.draw()
+    #packing.draw()
 
 
 if __name__ == "__main__":
